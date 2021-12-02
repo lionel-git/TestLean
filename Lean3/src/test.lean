@@ -1,7 +1,10 @@
+
+/- https://leanprover.github.io/theorem_proving_in_lean/introduction.html -/
+
+
 /- declare some constants -/
 
-constant m : nat        -- m is a natural number
-constant n : nat
+constants m n : nat        -- m is a natural number
 constants b1 b2 : bool  -- declare two constants at once
 
 /- check their types -/
@@ -15,3 +18,6 @@ constants b1 b2 : bool  -- declare two constants at once
 #check b1 || b2     -- boolean or
 #check tt           -- boolean "true"
 
+constant f : nat → nat
+
+#check f
